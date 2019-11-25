@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  TaiZhouEPApp
+//
+//  Created by shengxinwei on 2019/5/11.
+//  Copyright © 2019 snew. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "BaseMacro.h"
+#import "VendorsMacro.h"
+
+#endif /* PrefixHeader_pch */
