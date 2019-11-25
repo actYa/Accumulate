@@ -10,8 +10,8 @@
 		3DCB7F0DAC7760773009B865 /* libPods-TaiZhouEPApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */; };
 		3F43B9EE0F025E03B4B10BBB /* libPods-TaiZhouEPAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30696CFD13F1EFB91DA798 /* libPods-TaiZhouEPAppTests.a */; };
 		B1BA73A7B20D999306807FC1 /* libPods-TaiZhouEPAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B272471F8648C713919BCFC0 /* libPods-TaiZhouEPAppUITests.a */; };
+		F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63D0D1A238BC9EC00709CF2 /* XWSocketDemoController.m */; };
 		F64797E02387BCFC008D2391 /* XWVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64797DF2387BCFC008D2391 /* XWVideoListViewController.m */; };
-		F64797E62387C8AE008D2391 /* XWScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F64797E52387C8AE008D2391 /* XWScreen.m */; };
 		F64797E9238B62AA008D2391 /* XWScreenAdaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = F64797E8238B62AA008D2391 /* XWScreenAdaptation.m */; };
 		F6666DE32283FC15001FB810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6666DE22283FC15001FB810 /* AppDelegate.m */; };
 		F6666DE92283FC15001FB810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6666DE72283FC15001FB810 /* Main.storyboard */; };
@@ -57,10 +57,10 @@
 		B93CDD10CB27A22AE4B9C3D6 /* Pods-TaiZhouEPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPApp/Pods-TaiZhouEPApp.release.xcconfig"; sourceTree = "<group>"; };
 		C4FC0FFD088F9ED5ECC76E9D /* Pods-TaiZhouEPAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPAppUITests/Pods-TaiZhouEPAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB30696CFD13F1EFB91DA798 /* libPods-TaiZhouEPAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaiZhouEPAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63D0D19238BC9EC00709CF2 /* XWSocketDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWSocketDemoController.h; sourceTree = "<group>"; };
+		F63D0D1A238BC9EC00709CF2 /* XWSocketDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWSocketDemoController.m; sourceTree = "<group>"; };
 		F64797DE2387BCFC008D2391 /* XWVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWVideoListViewController.h; sourceTree = "<group>"; };
 		F64797DF2387BCFC008D2391 /* XWVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWVideoListViewController.m; sourceTree = "<group>"; };
-		F64797E42387C8AE008D2391 /* XWScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWScreen.h; sourceTree = "<group>"; };
-		F64797E52387C8AE008D2391 /* XWScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWScreen.m; sourceTree = "<group>"; };
 		F64797E7238B62AA008D2391 /* XWScreenAdaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWScreenAdaptation.h; sourceTree = "<group>"; };
 		F64797E8238B62AA008D2391 /* XWScreenAdaptation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWScreenAdaptation.m; sourceTree = "<group>"; };
 		F6666DDE2283FC15001FB810 /* TaiZhouEPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiZhouEPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +151,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F63D0D15238BC98E00709CF2 /* tempClass */ = {
+			isa = PBXGroup;
+			children = (
+				F63D0D18238BC9B800709CF2 /* Controller */,
+				F63D0D17238BC9B700709CF2 /* Model */,
+				F63D0D16238BC9B500709CF2 /* View */,
+			);
+			path = tempClass;
+			sourceTree = "<group>";
+		};
+		F63D0D16238BC9B500709CF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F63D0D17238BC9B700709CF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F63D0D18238BC9B800709CF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F63D0D19238BC9EC00709CF2 /* XWSocketDemoController.h */,
+				F63D0D1A238BC9EC00709CF2 /* XWSocketDemoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F64797DA2387816E008D2391 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +272,7 @@
 				F6666E142283FC28001FB810 /* Config */,
 				F6666E1B2283FE79001FB810 /* Macro(宏) */,
 				F6666E192283FCE5001FB810 /* Classes */,
+				F63D0D15238BC98E00709CF2 /* tempClass */,
 				F6666E1A2283FCF0001FB810 /* Base */,
 				F6666E132283FC1C001FB810 /* Other */,
 				F6666E4B2286AC34001FB810 /* PrefixHeader.pch */,
@@ -281,8 +315,6 @@
 		F6666E142283FC28001FB810 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				F64797E42387C8AE008D2391 /* XWScreen.h */,
-				F64797E52387C8AE008D2391 /* XWScreen.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -654,7 +686,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64797E62387C8AE008D2391 /* XWScreen.m in Sources */,
 				F6666E2722841629001FB810 /* UIImage+Extension.m in Sources */,
 				F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */,
 				F6666E2822841629001FB810 /* UIImage+Encrypt.m in Sources */,
@@ -665,6 +696,7 @@
 				F6666E2622841629001FB810 /* UIWebView+TS_JavaScriptContext.m in Sources */,
 				F6666DE32283FC15001FB810 /* AppDelegate.m in Sources */,
 				F6666E472286AB60001FB810 /* HomeViewController.m in Sources */,
+				F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */,
 				F64797E9238B62AA008D2391 /* XWScreenAdaptation.m in Sources */,
 				F64797E02387BCFC008D2391 /* XWVideoListViewController.m in Sources */,
 			);
