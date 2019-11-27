@@ -29,6 +29,7 @@
 		F6666E472286AB60001FB810 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6666E462286AB60001FB810 /* HomeViewController.m */; };
 		F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6666E492286AB79001FB810 /* MessageViewController.m */; };
 		F6666E4E22891473001FB810 /* icon_mine_header.png in Resources */ = {isa = PBXBuildFile; fileRef = F6666E4D22891473001FB810 /* icon_mine_header.png */; };
+		F6E530EC238CB1CE0062EBF9 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6E530EB238CB1CE0062EBF9 /* icon.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,7 @@
 		F64797DF2387BCFC008D2391 /* XWVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWVideoListViewController.m; sourceTree = "<group>"; };
 		F64797E7238B62AA008D2391 /* XWScreenAdaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWScreenAdaptation.h; sourceTree = "<group>"; };
 		F64797E8238B62AA008D2391 /* XWScreenAdaptation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWScreenAdaptation.m; sourceTree = "<group>"; };
-		F6666DDE2283FC15001FB810 /* TaiZhouEPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiZhouEPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6666DDE2283FC15001FB810 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6666DE12283FC15001FB810 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6666DE22283FC15001FB810 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6666DE82283FC15001FB810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		F6666E492286AB79001FB810 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		F6666E4B2286AC34001FB810 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F6666E4D22891473001FB810 /* icon_mine_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mine_header.png; sourceTree = "<group>"; };
+		F6E530EB238CB1CE0062EBF9 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		FE66DC42912328CDEF725379 /* Pods-TaiZhouEPAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPAppTests/Pods-TaiZhouEPAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,7 +257,7 @@
 		F6666DDF2283FC15001FB810 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6666DDE2283FC15001FB810 /* TaiZhouEPApp.app */,
+				F6666DDE2283FC15001FB810 /* .app */,
 				F6666DF62283FC16001FB810 /* TaiZhouEPAppTests.xctest */,
 				F6666E012283FC16001FB810 /* TaiZhouEPAppUITests.xctest */,
 			);
@@ -322,6 +324,7 @@
 		F6666E152283FC32001FB810 /* Resources(图片资源) */ = {
 			isa = PBXGroup;
 			children = (
+				F6E530EB238CB1CE0062EBF9 /* icon.bundle */,
 				F6666E4C22891443001FB810 /* MineImage */,
 			);
 			path = "Resources(图片资源)";
@@ -513,7 +516,7 @@
 			);
 			name = TaiZhouEPApp;
 			productName = TaiZhouEPApp;
-			productReference = F6666DDE2283FC15001FB810 /* TaiZhouEPApp.app */;
+			productReference = F6666DDE2283FC15001FB810 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		F6666DF52283FC16001FB810 /* TaiZhouEPAppTests */ = {
@@ -601,6 +604,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E530EC238CB1CE0062EBF9 /* icon.bundle in Resources */,
 				F6666E4E22891473001FB810 /* icon_mine_header.png in Resources */,
 				F6666DEE2283FC16001FB810 /* LaunchScreen.storyboard in Resources */,
 				F6666DEB2283FC16001FB810 /* Assets.xcassets in Resources */,
@@ -879,7 +883,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snew.TaiZhouEPApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "X新闻";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -898,7 +902,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snew.TaiZhouEPApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "X新闻";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

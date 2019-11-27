@@ -31,13 +31,10 @@
     MessageViewController *messageVC = [[MessageViewController alloc] init];
     MineViewController *mineVC = [[MineViewController alloc] init];
     
-    [self setupDetailsChildWithController:homeVC NavTitle:@"首页" TabBarTitle:@"首页" TabBarNormalImgStr:@"icon_tab_home_normal" TabBarSelectedImgStr:@"icon_tab_home_pressed"];
-    [self setupDetailsChildWithController:videoListVC NavTitle:@"视频" TabBarTitle:@"视频" TabBarNormalImgStr:@"icon_tab_session_normal" TabBarSelectedImgStr:@"icon_tab_session_pressed"];
-    [self setupDetailsChildWithController:messageVC NavTitle:@"消息" TabBarTitle:@"消息" TabBarNormalImgStr:@"icon_tab_circle_normal" TabBarSelectedImgStr:@"icon_tab_circle_pressed"];
-    [self setupDetailsChildWithController:mineVC NavTitle:@"我的" TabBarTitle:@"我的" TabBarNormalImgStr:@"icon_tab_me_normal" TabBarSelectedImgStr:@"icon_tab_me_pressed"];
-    
-    
-    
+    [self setupDetailsChildWithController:homeVC NavTitle:@"首页" TabBarTitle:@"首页" TabBarNormalImgStr:@"icon.bundle/home@2x" TabBarSelectedImgStr:@"icon.bundle/home_selected@2x"];
+    [self setupDetailsChildWithController:videoListVC NavTitle:@"视频" TabBarTitle:@"视频" TabBarNormalImgStr:@"icon.bundle/video@2x" TabBarSelectedImgStr:@"icon.bundle/video_selected@2x"];
+    [self setupDetailsChildWithController:messageVC NavTitle:@"推荐" TabBarTitle:@"推荐" TabBarNormalImgStr:@"icon.bundle/like@2x" TabBarSelectedImgStr:@"icon.bundle/like_selected@2x"];
+    [self setupDetailsChildWithController:mineVC NavTitle:@"我的" TabBarTitle:@"我的" TabBarNormalImgStr:@"icon.bundle/page@2x" TabBarSelectedImgStr:@"icon.bundle/page_selected@2x"];
     
 }
 
@@ -51,8 +48,8 @@
     navVC.tabBarItem.image = [[UIImage imageNamed:normalImgStr] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     navVC.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImgStr] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [navVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:[UIFont systemFontOfSize:12.0]} forState:UIControlStateNormal];
-     [navVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.0]} forState:UIControlStateSelected];
+    [navVC.tabBarItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12.0]} forState:UIControlStateNormal];
+     [navVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:33/255.0 green:151/255.0 blue:216/255.0 alpha:1.0],NSFontAttributeName:[UIFont systemFontOfSize:12.0]} forState:UIControlStateSelected];
     
     [self addChildViewController:navVC];
     
