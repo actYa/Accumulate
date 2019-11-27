@@ -30,6 +30,9 @@
 		F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6666E492286AB79001FB810 /* MessageViewController.m */; };
 		F6666E4E22891473001FB810 /* icon_mine_header.png in Resources */ = {isa = PBXBuildFile; fileRef = F6666E4D22891473001FB810 /* icon_mine_header.png */; };
 		F6E530EC238CB1CE0062EBF9 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6E530EB238CB1CE0062EBF9 /* icon.bundle */; };
+		F6E530F2238E17390062EBF9 /* XWListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F1238E17390062EBF9 /* XWListLoader.m */; };
+		F6E530F5238E21CC0062EBF9 /* XWListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F4238E21CC0062EBF9 /* XWListItem.m */; };
+		F6E530F8238E3EF30062EBF9 /* XWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F7238E3EF30062EBF9 /* XWNewsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,12 @@
 		F6666E4B2286AC34001FB810 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F6666E4D22891473001FB810 /* icon_mine_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mine_header.png; sourceTree = "<group>"; };
 		F6E530EB238CB1CE0062EBF9 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		F6E530F0238E17390062EBF9 /* XWListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWListLoader.h; sourceTree = "<group>"; };
+		F6E530F1238E17390062EBF9 /* XWListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWListLoader.m; sourceTree = "<group>"; };
+		F6E530F3238E21CC0062EBF9 /* XWListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWListItem.h; sourceTree = "<group>"; };
+		F6E530F4238E21CC0062EBF9 /* XWListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWListItem.m; sourceTree = "<group>"; };
+		F6E530F6238E3EF30062EBF9 /* XWNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNewsTableViewCell.h; sourceTree = "<group>"; };
+		F6E530F7238E3EF30062EBF9 /* XWNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNewsTableViewCell.m; sourceTree = "<group>"; };
 		FE66DC42912328CDEF725379 /* Pods-TaiZhouEPAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPAppTests/Pods-TaiZhouEPAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -269,10 +278,10 @@
 			children = (
 				F6666E162283FC46001FB810 /* Vendors(第三方) */,
 				F6666E172283FCBA001FB810 /* Utils(工具) */,
-				F6666E152283FC32001FB810 /* Resources(图片资源) */,
+				F6666E152283FC32001FB810 /* Resources(资源) */,
 				F6666E182283FCCD001FB810 /* Categories(分类) */,
 				F6666E142283FC28001FB810 /* Config */,
-				F6666E1B2283FE79001FB810 /* Macro(宏) */,
+				F6E530EE238E16E00062EBF9 /* Helpers */,
 				F6666E192283FCE5001FB810 /* Classes */,
 				F63D0D15238BC98E00709CF2 /* tempClass */,
 				F6666E1A2283FCF0001FB810 /* Base */,
@@ -317,17 +326,17 @@
 		F6666E142283FC28001FB810 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				F6666E1B2283FE79001FB810 /* Macro(宏) */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		F6666E152283FC32001FB810 /* Resources(图片资源) */ = {
+		F6666E152283FC32001FB810 /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
-				F6E530EB238CB1CE0062EBF9 /* icon.bundle */,
-				F6666E4C22891443001FB810 /* MineImage */,
+				F6E530ED238E16870062EBF9 /* Image */,
 			);
-			path = "Resources(图片资源)";
+			path = "Resources(资源)";
 			sourceTree = "<group>";
 		};
 		F6666E162283FC46001FB810 /* Vendors(第三方) */ = {
@@ -424,6 +433,8 @@
 		F6666E3322842231001FB810 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6E530F6238E3EF30062EBF9 /* XWNewsTableViewCell.h */,
+				F6E530F7238E3EF30062EBF9 /* XWNewsTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +442,8 @@
 		F6666E3422842238001FB810 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6E530F3238E21CC0062EBF9 /* XWListItem.h */,
+				F6E530F4238E21CC0062EBF9 /* XWListItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +509,32 @@
 				F6666E4D22891473001FB810 /* icon_mine_header.png */,
 			);
 			path = MineImage;
+			sourceTree = "<group>";
+		};
+		F6E530ED238E16870062EBF9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F6E530EB238CB1CE0062EBF9 /* icon.bundle */,
+				F6666E4C22891443001FB810 /* MineImage */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F6E530EE238E16E00062EBF9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F6E530EF238E17130062EBF9 /* Network */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F6E530EF238E17130062EBF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F6E530F0238E17390062EBF9 /* XWListLoader.h */,
+				F6E530F1238E17390062EBF9 /* XWListLoader.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -693,6 +732,8 @@
 				F6666E2722841629001FB810 /* UIImage+Extension.m in Sources */,
 				F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */,
 				F6666E2822841629001FB810 /* UIImage+Encrypt.m in Sources */,
+				F6E530F5238E21CC0062EBF9 /* XWListItem.m in Sources */,
+				F6E530F2238E17390062EBF9 /* XWListLoader.m in Sources */,
 				F6666E2922841629001FB810 /* UIView+Extension.m in Sources */,
 				F6666E2F22841F7C001FB810 /* BaseTabBarController.m in Sources */,
 				F6666E442286AB56001FB810 /* MineViewController.m in Sources */,
@@ -703,6 +744,7 @@
 				F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */,
 				F64797E9238B62AA008D2391 /* XWScreenAdaptation.m in Sources */,
 				F64797E02387BCFC008D2391 /* XWVideoListViewController.m in Sources */,
+				F6E530F8238E3EF30062EBF9 /* XWNewsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,10 +30,11 @@ DEPENDENCIES:
   - FMDB (~> 2.7.5)
   - HBDNavigationBar (~> 1.3.2)
   - Masonry (~> 1.1.0)
+  - SDWebImage
   - SDWebImage (~> 4.4.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaAsyncSocket
     - FMDB
@@ -49,6 +50,6 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 99535185d99aaeabbd317daecb1246949628e9c9
+PODFILE CHECKSUM: 980b907941d4511b8da13637a14f1b23424c81b8
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.3

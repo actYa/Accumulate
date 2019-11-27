@@ -12,6 +12,8 @@
 #import <AFNetworking.h>
 //#import <YYKit.h>
 //#import <SVProgressHUD.h>
+
+#import <UIImageView+WebCache.h>
 #import <Masonry.h>
 #import <HBDNavigationBar/UIViewController+HBD.h>
 #import <HBDNavigationBar/HBDNavigationController.h>
