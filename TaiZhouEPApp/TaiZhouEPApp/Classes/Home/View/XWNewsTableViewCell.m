@@ -32,7 +32,7 @@
 - (void)setupCellUI {
     [self.contentView addSubview:({
         self.rightImageView = [[UIImageView alloc] init];
-        self.rightImageView.contentMode = UIViewContentModeScaleAspectFit;
+//        self.rightImageView.contentMode = UIViewContentModeScaleAspectFit;
         self.rightImageView;
     })];
     
@@ -68,8 +68,9 @@
     
     [self.rightImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(15);
-        make.right.equalTo(self.contentView).offset(15);
-        make.size.mas_equalTo(CGSizeMake(100, 70));
+        make.right.equalTo(self.contentView).offset(-15);
+        make.width.equalTo(@100);
+        make.height.equalTo(@70);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -100,7 +101,9 @@
     self.sourceLabel.text = item.authorName;
     self.commentLabel.text = item.category;
     self.timeLabel.text = item.date;
-    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.picUrl]];
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.picUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+    }];
 
 }
 
