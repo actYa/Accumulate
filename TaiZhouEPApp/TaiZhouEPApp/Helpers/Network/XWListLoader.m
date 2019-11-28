@@ -18,7 +18,6 @@
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSError *jsonErr;
         id jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonErr];
-        DLog(@"%@",jsonData);
     }];
     [dataTask resume]; //开启
     
