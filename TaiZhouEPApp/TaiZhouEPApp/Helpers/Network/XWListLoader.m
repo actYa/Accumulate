@@ -8,9 +8,35 @@
 
 #import "XWListLoader.h"
 #import "XWListItem.h"
+#import "XWNetworkManager.h"
 
 @implementation XWListLoader
 
+- (void)loadListDataWithFinishBlock:(XWListLoaderFinishBlock)finishBlock {
+    NSString *urlString = @"https://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
+    
+    [XWNetworkManager requestWithMethods:GET UrlString:urlString Params:nil Success:^(id  _Nonnull jsonObj) {
+        NSArray *dataArray =  [((NSDictionary *)[((NSDictionary *)jsonObj) objectForKey:@"result"]) objectForKey:@"data"];
+        NSMutableArray *listItemArray = [NSMutableArray arrayWithCapacity:dataArray.count];
+               for (NSDictionary *info in dataArray) {
+                   XWListItem *listItem = [[XWListItem alloc] init];
+                   [listItem initWithDictionary:info];
+                   [listItemArray addObject:listItem];
+               }
+               dispatch_async(dispatch_get_main_queue(), ^{
+                   if (finishBlock) {
+                       finishBlock(YES, listItemArray.copy);
+                   }
+               });
+        
+    } Failure:^(id  _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+    
+   
+}
+
+/*
 - (void)loadListDataWithFinishBlock:(XWListLoaderFinishBlock)finishBlock {
     NSString *urlString = @"https://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
     NSURL *listURL = [NSURL URLWithString:urlString];
@@ -38,5 +64,5 @@
     [dataTask resume]; //开启
     
 }
-
+*/
 @end

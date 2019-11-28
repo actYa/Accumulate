@@ -60,6 +60,7 @@
     UIGraphicsEndImageContext();
     
     return newImage;
+    
 }
 
 //压缩图片（质量）大小
