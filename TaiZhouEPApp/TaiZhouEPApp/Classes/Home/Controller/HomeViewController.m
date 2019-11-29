@@ -7,14 +7,16 @@
 //
 
 #import "HomeViewController.h"
-#import "XWListLoader.h"
+#import "XWNewsListLoader.h"
 #import "XWNewsTableViewCell.h"
+#import "XWNewsDetailViewController.h"
+#import "XWListItem.h"
 
 
 @interface HomeViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *dataArray;
-@property (nonatomic,strong) XWListLoader *loader;
+@property (nonatomic,strong) XWNewsListLoader *loader;
 @end
 
 @implementation HomeViewController
@@ -31,7 +33,7 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
     
-    self.loader = [[XWListLoader alloc] init];
+    self.loader = [[XWNewsListLoader alloc] init];
     __weak typeof(self) weakSelf = self;
     [self.loader loadListDataWithFinishBlock:^(BOOL success, NSArray * _Nonnull dataArray) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
@@ -39,19 +41,21 @@
         [strongSelf.tableView reloadData];
     }];
     
-    if (@available(iOS 11.0, *)) {
-        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
-    [_tableView setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
-
+    [_tableView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
+ 
     
 }
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+     XWListItem *item = self.dataArray[indexPath.row];
+    NSString *articleStr = item.articleUrl;
+    XWNewsDetailViewController *detailVC = [[XWNewsDetailViewController alloc] initWithArticleUrl:articleStr];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource

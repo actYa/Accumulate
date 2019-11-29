@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */; };
 		18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */; };
 		3DCB7F0DAC7760773009B865 /* libPods-TaiZhouEPApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */; };
 		3F43B9EE0F025E03B4B10BBB /* libPods-TaiZhouEPAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30696CFD13F1EFB91DA798 /* libPods-TaiZhouEPAppTests.a */; };
@@ -31,7 +32,7 @@
 		F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6666E492286AB79001FB810 /* MessageViewController.m */; };
 		F6666E4E22891473001FB810 /* icon_mine_header.png in Resources */ = {isa = PBXBuildFile; fileRef = F6666E4D22891473001FB810 /* icon_mine_header.png */; };
 		F6E530EC238CB1CE0062EBF9 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6E530EB238CB1CE0062EBF9 /* icon.bundle */; };
-		F6E530F2238E17390062EBF9 /* XWListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F1238E17390062EBF9 /* XWListLoader.m */; };
+		F6E530F2238E17390062EBF9 /* XWNewsListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F1238E17390062EBF9 /* XWNewsListLoader.m */; };
 		F6E530F5238E21CC0062EBF9 /* XWListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F4238E21CC0062EBF9 /* XWListItem.m */; };
 		F6E530F8238E3EF30062EBF9 /* XWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E530F7238E3EF30062EBF9 /* XWNewsTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18A29CEA2390E3A2007CFB1A /* XWNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNewsDetailViewController.h; sourceTree = "<group>"; };
+		18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWNewsContentViewController.m; sourceTree = "<group>"; };
 		18A40FF5238F9DB200EA3018 /* XWNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNetworkManager.h; sourceTree = "<group>"; };
 		18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNetworkManager.m; sourceTree = "<group>"; };
 		3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaiZhouEPApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +108,8 @@
 		F6666E4B2286AC34001FB810 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F6666E4D22891473001FB810 /* icon_mine_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mine_header.png; sourceTree = "<group>"; };
 		F6E530EB238CB1CE0062EBF9 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
-		F6E530F0238E17390062EBF9 /* XWListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWListLoader.h; sourceTree = "<group>"; };
-		F6E530F1238E17390062EBF9 /* XWListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWListLoader.m; sourceTree = "<group>"; };
+		F6E530F0238E17390062EBF9 /* XWNewsListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNewsListLoader.h; sourceTree = "<group>"; };
+		F6E530F1238E17390062EBF9 /* XWNewsListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNewsListLoader.m; sourceTree = "<group>"; };
 		F6E530F3238E21CC0062EBF9 /* XWListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWListItem.h; sourceTree = "<group>"; };
 		F6E530F4238E21CC0062EBF9 /* XWListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWListItem.m; sourceTree = "<group>"; };
 		F6E530F6238E3EF30062EBF9 /* XWNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNewsTableViewCell.h; sourceTree = "<group>"; };
@@ -465,6 +468,8 @@
 			children = (
 				F6666E452286AB60001FB810 /* HomeViewController.h */,
 				F6666E462286AB60001FB810 /* HomeViewController.m */,
+				18A29CEA2390E3A2007CFB1A /* XWNewsDetailViewController.h */,
+				18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -543,8 +548,8 @@
 		F6E530EF238E17130062EBF9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F6E530F0238E17390062EBF9 /* XWListLoader.h */,
-				F6E530F1238E17390062EBF9 /* XWListLoader.m */,
+				F6E530F0238E17390062EBF9 /* XWNewsListLoader.h */,
+				F6E530F1238E17390062EBF9 /* XWNewsListLoader.m */,
 				18A40FF8238F9E7600EA3018 /* NetworkTool */,
 			);
 			path = Network;
@@ -746,8 +751,9 @@
 				F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */,
 				F6666E2822841629001FB810 /* UIImage+Encrypt.m in Sources */,
 				F6E530F5238E21CC0062EBF9 /* XWListItem.m in Sources */,
-				F6E530F2238E17390062EBF9 /* XWListLoader.m in Sources */,
+				F6E530F2238E17390062EBF9 /* XWNewsListLoader.m in Sources */,
 				F6666E2922841629001FB810 /* UIView+Extension.m in Sources */,
+				18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */,
 				F6666E2F22841F7C001FB810 /* BaseTabBarController.m in Sources */,
 				F6666E442286AB56001FB810 /* MineViewController.m in Sources */,
 				F6666DF12283FC16001FB810 /* main.m in Sources */,

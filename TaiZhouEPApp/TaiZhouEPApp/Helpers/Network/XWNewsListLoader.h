@@ -1,5 +1,5 @@
 //
-//  XWListLoader.h
+//  XWNewsListLoader.h
 //  TaiZhouEPApp
 //
 //  Created by shengxinwei on 2019/11/27.
@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^XWListLoaderFinishBlock)(BOOL success,NSArray *dataArray);
 
-@interface XWListLoader : NSObject
+@interface XWNewsListLoader : NSObject
 
 - (void)loadListDataWithFinishBlock:(XWListLoaderFinishBlock)finishBlock;
 

@@ -15,11 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 //状态栏高度
 #define STATUSBAR_HEIGHT  [[UIApplication sharedApplication] statusBarFrame].size.height
 //导航栏高度
-#define NAVBAR_SUM_HEIGHT  ((IS_IPHONE_X == YES || IS_IPHONE_XR == YES || IS_IPHONE_XS_MAX == YES) ?88:64)
+#define NAVBAR_SUM_HEIGHT  ((IS_IPHONE_X == YES || IS_IPHONE_XR == YES || IS_IPHONE_XSMAX == YES) ?88:64)
 //适配iPhoneX 的高度
-#define X_Height(h) ((IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XS_MAX) ? (h+24):h)
+#define X_Height(h) ((IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? (h+24):h)
 //适配iPhoneX 底部
-#define X_Bottom(h) ((IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XS_MAX) ? (h+34):h)
+#define X_Bottom(h) ((IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? (h+34):h)
 
 //判断横竖屏
 #define IS_LANDSCAPE (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]))
@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //MARK: - 判断 iPhone 机型
 #define IS_IPHONE_X_XR_MAX (IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XSMAX)
-#define IS_IPHONE_X (SCREEN_WIDTH == [GTScreen sizeFor58Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor58Inch].height)
-#define IS_IPHONE_XR (SCREEN_WIDTH == [GTScreen sizeFor61Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor61Inch].height && [UIScreen mainScreen].scale == 2)
-#define IS_IPHONE_XSMAX (SCREEN_WIDTH == [GTScreen sizeFor65Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor65Inch].height && [UIScreen mainScreen].scale == 3)
+#define IS_IPHONE_X (SCREEN_WIDTH == [XWScreenAdaptation sizeFor58Inch].width && SCREEN_HEIGHT == [XWScreenAdaptation sizeFor58Inch].height)
+#define IS_IPHONE_XR (SCREEN_WIDTH == [XWScreenAdaptation sizeFor61Inch].width && SCREEN_HEIGHT == [XWScreenAdaptation sizeFor61Inch].height && [UIScreen mainScreen].scale == 2)
+#define IS_IPHONE_XSMAX (SCREEN_WIDTH == [XWScreenAdaptation sizeFor65Inch].width && SCREEN_HEIGHT == [XWScreenAdaptation sizeFor65Inch].height && [UIScreen mainScreen].scale == 3)
 #define IS_IPHONE_4 (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)480) < DBL_EPSILON)
 #define IS_IPHONE_5 (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)568) < DBL_EPSILON)
 #define IS_IPHONE_6 (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)667) < DBL_EPSILON)

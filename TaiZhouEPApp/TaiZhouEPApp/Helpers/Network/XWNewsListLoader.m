@@ -1,16 +1,16 @@
 //
-//  XWListLoader.m
+//  XWNewsListLoader.m
 //  TaiZhouEPApp
 //
 //  Created by shengxinwei on 2019/11/27.
 //  Copyright © 2019 snew. All rights reserved.
 //
 
-#import "XWListLoader.h"
+#import "XWNewsListLoader.h"
 #import "XWListItem.h"
 #import "XWNetworkManager.h"
 
-@implementation XWListLoader
+@implementation XWNewsListLoader
 
 - (void)loadListDataWithFinishBlock:(XWListLoaderFinishBlock)finishBlock {
     NSString *urlString = @"https://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
