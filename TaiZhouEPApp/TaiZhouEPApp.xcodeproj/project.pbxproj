@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */; };
 		18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */; };
+		18AB0C5623920355002517CF /* XWMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB0C5523920355002517CF /* XWMediator.m */; };
 		3DCB7F0DAC7760773009B865 /* libPods-TaiZhouEPApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */; };
 		3F43B9EE0F025E03B4B10BBB /* libPods-TaiZhouEPAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30696CFD13F1EFB91DA798 /* libPods-TaiZhouEPAppTests.a */; };
 		B1BA73A7B20D999306807FC1 /* libPods-TaiZhouEPAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B272471F8648C713919BCFC0 /* libPods-TaiZhouEPAppUITests.a */; };
@@ -59,6 +60,8 @@
 		18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWNewsContentViewController.m; sourceTree = "<group>"; };
 		18A40FF5238F9DB200EA3018 /* XWNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNetworkManager.h; sourceTree = "<group>"; };
 		18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNetworkManager.m; sourceTree = "<group>"; };
+		18AB0C5423920355002517CF /* XWMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWMediator.h; sourceTree = "<group>"; };
+		18AB0C5523920355002517CF /* XWMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWMediator.m; sourceTree = "<group>"; };
 		3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaiZhouEPApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C92249817324140F9E5FEF2 /* Pods-TaiZhouEPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPApp/Pods-TaiZhouEPApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8A656DB0C349B46F7D26C010 /* Pods-TaiZhouEPAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiZhouEPAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaiZhouEPAppUITests/Pods-TaiZhouEPAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 			children = (
 				F64797E7238B62AA008D2391 /* XWScreenAdaptation.h */,
 				F64797E8238B62AA008D2391 /* XWScreenAdaptation.m */,
+				18AB0C5423920355002517CF /* XWMediator.h */,
+				18AB0C5523920355002517CF /* XWMediator.m */,
 			);
 			path = "Utils(工具)";
 			sourceTree = "<group>";
@@ -761,6 +766,7 @@
 				18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */,
 				F6666DE32283FC15001FB810 /* AppDelegate.m in Sources */,
 				F6666E472286AB60001FB810 /* HomeViewController.m in Sources */,
+				18AB0C5623920355002517CF /* XWMediator.m in Sources */,
 				F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */,
 				F64797E9238B62AA008D2391 /* XWScreenAdaptation.m in Sources */,
 				F64797E02387BCFC008D2391 /* XWVideoListViewController.m in Sources */,

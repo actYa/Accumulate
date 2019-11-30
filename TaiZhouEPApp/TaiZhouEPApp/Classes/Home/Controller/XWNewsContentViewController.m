@@ -8,6 +8,7 @@
 
 #import "XWNewsDetailViewController.h"
 #import <WebKit/WebKit.h>
+#import "XWMediator.h"
 
 @interface XWNewsDetailViewController () <WKNavigationDelegate>
 @property (nonatomic,strong) WKWebView *webView;
@@ -16,6 +17,18 @@
 @end
 
 @implementation XWNewsDetailViewController
+
++ (void)load {
+    [XWMediator registerScheme:@"detail://" progressBlock:^(NSDictionary * _Nonnull params) {
+         NSString *url = (NSString *)[params objectForKey:@"url"];
+        UINavigationController *navigationController = (UINavigationController *)[params objectForKey:@"controller"];
+        XWNewsDetailViewController *controller = [[XWNewsDetailViewController alloc] initWithArticleUrl:url];
+        [navigationController pushViewController:controller animated:YES];
+    }];
+    
+    [XWMediator registerProtol:@protocol(XWNewsDetailViewControllerProtocol) class:[self class]];
+}
+
 
 - (instancetype)initWithArticleUrl:(NSString *)articleUrl {
     self = [super init];

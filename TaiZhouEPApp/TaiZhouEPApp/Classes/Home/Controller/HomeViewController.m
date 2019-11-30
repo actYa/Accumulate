@@ -11,6 +11,7 @@
 #import "XWNewsTableViewCell.h"
 #import "XWNewsDetailViewController.h"
 #import "XWListItem.h"
+#import "XWMediator.h"
 
 
 @interface HomeViewController () <UITableViewDataSource,UITableViewDelegate>
@@ -53,9 +54,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
      XWListItem *item = self.dataArray[indexPath.row];
-    NSString *articleStr = item.articleUrl;
-    XWNewsDetailViewController *detailVC = [[XWNewsDetailViewController alloc] initWithArticleUrl:articleStr];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    //option one
+//    UIViewController *detailVC = [XWMediator detailViewControllerWithUrl:item.articleUrl];
+//    detailVC.title = item.title;
+//    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    //option two
+//    [XWMediator openUrl:@"detail://" params:@{@"url":item.articleUrl,@"controller":self.navigationController}];
+    
+    //option three
+    Class cls =  [XWMediator classForProtocol:@protocol(XWNewsDetailViewControllerProtocol)];
+    [self.navigationController pushViewController:[[cls alloc] initWithArticleUrl:item.articleUrl] animated:YES];
+    
 }
 
 #pragma mark - UITableViewDataSource
