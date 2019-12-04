@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1864538A2396430E002F2F05 /* XWMemoryExplainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186453892396430E002F2F05 /* XWMemoryExplainController.m */; };
 		18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */; };
 		18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */; };
 		18AB0C5623920355002517CF /* XWMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB0C5523920355002517CF /* XWMediator.m */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186453882396430E002F2F05 /* XWMemoryExplainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWMemoryExplainController.h; sourceTree = "<group>"; };
+		186453892396430E002F2F05 /* XWMemoryExplainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWMemoryExplainController.m; sourceTree = "<group>"; };
 		18A29CEA2390E3A2007CFB1A /* XWNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNewsDetailViewController.h; sourceTree = "<group>"; };
 		18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWNewsContentViewController.m; sourceTree = "<group>"; };
 		18A40FF5238F9DB200EA3018 /* XWNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNetworkManager.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 			children = (
 				F63D0D19238BC9EC00709CF2 /* XWSocketDemoController.h */,
 				F63D0D1A238BC9EC00709CF2 /* XWSocketDemoController.m */,
+				186453882396430E002F2F05 /* XWMemoryExplainController.h */,
+				186453892396430E002F2F05 /* XWMemoryExplainController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -767,6 +772,7 @@
 				F6666DE32283FC15001FB810 /* AppDelegate.m in Sources */,
 				F6666E472286AB60001FB810 /* HomeViewController.m in Sources */,
 				18AB0C5623920355002517CF /* XWMediator.m in Sources */,
+				1864538A2396430E002F2F05 /* XWMemoryExplainController.m in Sources */,
 				F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */,
 				F64797E9238B62AA008D2391 /* XWScreenAdaptation.m in Sources */,
 				F64797E02387BCFC008D2391 /* XWVideoListViewController.m in Sources */,

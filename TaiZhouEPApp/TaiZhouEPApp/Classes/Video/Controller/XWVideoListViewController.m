@@ -8,17 +8,38 @@
 
 #import "XWVideoListViewController.h"
 
-@interface XWVideoListViewController ()
-
+@interface XWVideoListViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
+@property (nonatomic,strong) UICollectionView *collectionView;
 @end
 
 @implementation XWVideoListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupUI];
 }
 
+- (void)setupUI {
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
+    [self.view addSubview:self.collectionView];
+    
+}
+
+#pragma mark - UICollectionViewDelegate
+
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return [UICollectionViewCell new];
+}
 
 
 @end
