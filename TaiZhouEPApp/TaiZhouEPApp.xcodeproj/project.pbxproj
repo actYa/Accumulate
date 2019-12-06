@@ -10,6 +10,10 @@
 		1864538A2396430E002F2F05 /* XWMemoryExplainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186453892396430E002F2F05 /* XWMemoryExplainController.m */; };
 		18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */; };
 		18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */; };
+		18A89A00239A3665007B5119 /* XWVideoListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A899FF239A3665007B5119 /* XWVideoListLoader.m */; };
+		18A89A05239A366D007B5119 /* XWVideoListCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A89A01239A366D007B5119 /* XWVideoListCoverView.m */; };
+		18A89A06239A366D007B5119 /* XWVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A89A02239A366D007B5119 /* XWVideoToolbar.m */; };
+		18A89A09239A39B1007B5119 /* XWVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A89A08239A39B1007B5119 /* XWVideoPlayer.m */; };
 		18AB0C5623920355002517CF /* XWMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB0C5523920355002517CF /* XWMediator.m */; };
 		3DCB7F0DAC7760773009B865 /* libPods-TaiZhouEPApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */; };
 		3F43B9EE0F025E03B4B10BBB /* libPods-TaiZhouEPAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30696CFD13F1EFB91DA798 /* libPods-TaiZhouEPAppTests.a */; };
@@ -63,6 +67,14 @@
 		18A29CED2390E444007CFB1A /* XWNewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWNewsContentViewController.m; sourceTree = "<group>"; };
 		18A40FF5238F9DB200EA3018 /* XWNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWNetworkManager.h; sourceTree = "<group>"; };
 		18A40FF6238F9DB200EA3018 /* XWNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNetworkManager.m; sourceTree = "<group>"; };
+		18A899FE239A3665007B5119 /* XWVideoListLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWVideoListLoader.h; sourceTree = "<group>"; };
+		18A899FF239A3665007B5119 /* XWVideoListLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWVideoListLoader.m; sourceTree = "<group>"; };
+		18A89A01239A366D007B5119 /* XWVideoListCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWVideoListCoverView.m; sourceTree = "<group>"; };
+		18A89A02239A366D007B5119 /* XWVideoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWVideoToolbar.m; sourceTree = "<group>"; };
+		18A89A03239A366D007B5119 /* XWVideoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWVideoToolbar.h; sourceTree = "<group>"; };
+		18A89A04239A366D007B5119 /* XWVideoListCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWVideoListCoverView.h; sourceTree = "<group>"; };
+		18A89A07239A39B1007B5119 /* XWVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWVideoPlayer.h; sourceTree = "<group>"; };
+		18A89A08239A39B1007B5119 /* XWVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWVideoPlayer.m; sourceTree = "<group>"; };
 		18AB0C5423920355002517CF /* XWMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWMediator.h; sourceTree = "<group>"; };
 		18AB0C5523920355002517CF /* XWMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWMediator.m; sourceTree = "<group>"; };
 		3718CBADEBBE92019B992A3C /* libPods-TaiZhouEPApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaiZhouEPApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +172,28 @@
 			path = NetworkTool;
 			sourceTree = "<group>";
 		};
+		18A899FC239A363C007B5119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A89A04239A366D007B5119 /* XWVideoListCoverView.h */,
+				18A89A01239A366D007B5119 /* XWVideoListCoverView.m */,
+				18A89A03239A366D007B5119 /* XWVideoToolbar.h */,
+				18A89A02239A366D007B5119 /* XWVideoToolbar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A899FD239A3640007B5119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A899FE239A3665007B5119 /* XWVideoListLoader.h */,
+				18A899FF239A3665007B5119 /* XWVideoListLoader.m */,
+				18A89A07239A39B1007B5119 /* XWVideoPlayer.h */,
+				18A89A08239A39B1007B5119 /* XWVideoPlayer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AB5EC57C66B933D918224EF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,24 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				F64797DD2387BB53008D2391 /* Controller */,
-				F64797DC2387BB50008D2391 /* Model */,
-				F64797DB2387BB49008D2391 /* View */,
+				18A899FD239A3640007B5119 /* Model */,
+				18A899FC239A363C007B5119 /* View */,
 			);
 			path = Video;
-			sourceTree = "<group>";
-		};
-		F64797DB2387BB49008D2391 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F64797DC2387BB50008D2391 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F64797DD2387BB53008D2391 /* Controller */ = {
@@ -249,20 +269,6 @@
 				F64797DF2387BCFC008D2391 /* XWVideoListViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F64797E12387BD97008D2391 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F64797E22387BD99008D2391 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F64797E32387BD9B008D2391 /* Controller */ = {
@@ -410,8 +416,6 @@
 			isa = PBXGroup;
 			children = (
 				F64797E32387BD9B008D2391 /* Controller */,
-				F64797E22387BD99008D2391 /* Model */,
-				F64797E12387BD97008D2391 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -757,20 +761,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A89A06239A366D007B5119 /* XWVideoToolbar.m in Sources */,
 				F6666E2722841629001FB810 /* UIImage+Extension.m in Sources */,
 				F6666E4A2286AB79001FB810 /* MessageViewController.m in Sources */,
 				F6666E2822841629001FB810 /* UIImage+Encrypt.m in Sources */,
 				F6E530F5238E21CC0062EBF9 /* XWListItem.m in Sources */,
 				F6E530F2238E17390062EBF9 /* XWNewsListLoader.m in Sources */,
+				18A89A00239A3665007B5119 /* XWVideoListLoader.m in Sources */,
 				F6666E2922841629001FB810 /* UIView+Extension.m in Sources */,
 				18A29CEE2390E445007CFB1A /* XWNewsContentViewController.m in Sources */,
 				F6666E2F22841F7C001FB810 /* BaseTabBarController.m in Sources */,
 				F6666E442286AB56001FB810 /* MineViewController.m in Sources */,
 				F6666DF12283FC16001FB810 /* main.m in Sources */,
 				F6666E2622841629001FB810 /* UIWebView+TS_JavaScriptContext.m in Sources */,
+				18A89A09239A39B1007B5119 /* XWVideoPlayer.m in Sources */,
 				18A40FF7238F9DB200EA3018 /* XWNetworkManager.m in Sources */,
 				F6666DE32283FC15001FB810 /* AppDelegate.m in Sources */,
 				F6666E472286AB60001FB810 /* HomeViewController.m in Sources */,
+				18A89A05239A366D007B5119 /* XWVideoListCoverView.m in Sources */,
 				18AB0C5623920355002517CF /* XWMediator.m in Sources */,
 				1864538A2396430E002F2F05 /* XWMemoryExplainController.m in Sources */,
 				F63D0D1B238BC9EC00709CF2 /* XWSocketDemoController.m in Sources */,
