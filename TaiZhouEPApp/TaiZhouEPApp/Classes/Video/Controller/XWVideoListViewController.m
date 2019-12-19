@@ -25,7 +25,7 @@
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.minimumLineSpacing = 10;
     flowLayout.minimumInteritemSpacing = 10;
-    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width / 16 * 9 + XWVideoToolbarHeight);                                                           
+    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width / 16 * 9 + XWVideoToolbarHeight);
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     self.collectionView.dataSource = self;
